@@ -37,7 +37,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.référentielToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noteRésultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.etudiantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manipulationDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.délibérationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -123,6 +131,58 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.référentielToolStripMenuItem,
+            this.noteRésultatToolStripMenuItem,
+            this.délibérationToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(478, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // référentielToolStripMenuItem
+            // 
+            this.référentielToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.etudiantToolStripMenuItem,
+            this.manipulationDonnéesToolStripMenuItem});
+            this.référentielToolStripMenuItem.Name = "référentielToolStripMenuItem";
+            this.référentielToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.référentielToolStripMenuItem.Text = "Référentiel";
+            // 
+            // noteRésultatToolStripMenuItem
+            // 
+            this.noteRésultatToolStripMenuItem.Name = "noteRésultatToolStripMenuItem";
+            this.noteRésultatToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.noteRésultatToolStripMenuItem.Text = "NoteRésultat";
+            // 
+            // etudiantToolStripMenuItem
+            // 
+            this.etudiantToolStripMenuItem.Name = "etudiantToolStripMenuItem";
+            this.etudiantToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.etudiantToolStripMenuItem.Text = "Etudiant";
+            // 
+            // manipulationDonnéesToolStripMenuItem
+            // 
+            this.manipulationDonnéesToolStripMenuItem.Name = "manipulationDonnéesToolStripMenuItem";
+            this.manipulationDonnéesToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.manipulationDonnéesToolStripMenuItem.Text = "Elément Pédagogique";
+            // 
+            // délibérationToolStripMenuItem
+            // 
+            this.délibérationToolStripMenuItem.Name = "délibérationToolStripMenuItem";
+            this.délibérationToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.délibérationToolStripMenuItem.Text = "Délibération";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,10 +197,14 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Delib";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +221,13 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem référentielToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem etudiantToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manipulationDonnéesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noteRésultatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem délibérationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }
 
